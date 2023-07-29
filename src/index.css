@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,400&family=Mulish:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Mulish', sans-serif;
+  text-transform: capitalize;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2195f36a;
+}
+.mainWrapper .mainNotification {
+  position: absolute;
+  top: 0;
+}
+.mainContainer {
+  background-color: #fff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.353);
+  border-radius: 4px;
+  padding: 2rem;
+  width: 300px;
+}
+.mainContainer h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.textCopy {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2195f3b5;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.fieldWrapper {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.field {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+  text-align: center;
+  background-color: #2196f3;
+  border-radius: 20px;
+  padding: 12px;
+  cursor: pointer;
+}
+.btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.slider_container {
+  position: relative;
+  width: 100%;
+}
+
+.slider_container input[type='range'] {
+  width: 100%;
+  height: 8px;
+  background: #d3d3d3;
+  border-radius: 4px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider_container input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider_value {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  font-size: 1.2rem;
+  font-weight: 900;
+  transform: translateX(-50%);
+}
